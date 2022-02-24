@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" onsubmit="controller.exibe(event)">
+
+        <label for="country">Country: </label>
+        <input id="country" name="country" type="text">
+
+        <label for="city">City: </label>
+        <input id="city" name="city" type="text">
+
+        <label for="people">People: </label>
+        <input id="people" name="people" type="text">
+
+        <label for="salary">Salário: </label>
+        <input id="salary" name="salary" type="text">
+
+        <label for="airport">Aerportp: </label>
+        <input id="airport" name="airport" type="text">
+
+        <input type="submit">
+    </form>
+
+    <script src="Controller/TurismoController.js"></script>
+    <script src="Models/Turismo.js"></script>
+    <script src="Models/ListaTurismo.js"></script>
+    <script>
+
+        let controller = new TurismoController();
+
+    </script>
+</body>
+</html>
