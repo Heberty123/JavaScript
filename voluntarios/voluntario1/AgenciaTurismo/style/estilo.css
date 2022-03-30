@@ -1,0 +1,30 @@
+body{
+    background-color: bisque;
+}
+
+form{
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
+    padding: 50px 30px;
+    margin: 50px auto;
+}
+
+.divForm{
+    display: flex;
+    height: 60px;
+    text-align: center;
+    justify-self: center;
+    margin-bottom: 30px;
+
+}
+
+.divForm label{
+    width: 20%;
+    
+}
+
+.divForm input{
+    width: 80%;
+    
+}

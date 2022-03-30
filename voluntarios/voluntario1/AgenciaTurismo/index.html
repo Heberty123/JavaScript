@@ -4,32 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/estilo.css">
     <title>Document</title>
 </head>
 <body>
-    <form action="" onsubmit="controller.exibe(event)">
 
-        <label for="country">Country: </label>
-        <input id="country" name="country" type="text">
+    <div>
+        <h1 class="divMensagens"></h1>
+    </div>
 
-        <label for="city">City: </label>
-        <input id="city" name="city" type="text">
+    <form action="" onsubmit="controller.acao(event)">
 
-        <label for="people">People: </label>
-        <input id="people" name="people" type="text">
+        <div class="divForm">
+            <label for="country">Country: </label>
+            <input id="country" name="country" type="text">
+        </div>
 
-        <label for="salary">Sal·rio: </label>
-        <input id="salary" name="salary" type="text">
+        <div class="divForm">
+            <label for="city">City: </label>
+            <input id="city" name="city" type="text">
+        </div>
 
-        <label for="airport">Aerportp: </label>
-        <input id="airport" name="airport" type="text">
+        <div class="divForm">
+            <label for="people">People: </label>
+            <input id="people" name="people" type="text" value="0">
+        </div>
 
-        <input type="submit">
+        <div class="divForm">
+            <label for="salary">Sal√°rio: </label>
+            <input id="salary" name="salary" type="text">
+        </div>
+
+        <div class="divForm">
+            <label for="airport">Aerportp: </label>
+            <input id="airport" name="airport" type="text">
+        </div>
+
+        <input class="button" type="submit">
+
+
+        <div class="Lista">
+
+        </div>
+
+        
+
     </form>
 
     <script src="Controller/TurismoController.js"></script>
     <script src="Models/Turismo.js"></script>
     <script src="Models/ListaTurismo.js"></script>
+    <script src="Views/TurismoViewTabela.js"></script>
+    <script src="Views/Mensagem.js"></script>
     <script>
 
         let controller = new TurismoController();
